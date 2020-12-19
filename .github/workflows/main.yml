@@ -23,6 +23,7 @@ jobs:
       - run: conda list
       - run: conda config --show
 
+      - run: echo "dummy change (check no history in gh-pages)"
       - run: pandoc -v > pandoc.v.txt
 
 
