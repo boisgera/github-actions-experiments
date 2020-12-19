@@ -3,7 +3,7 @@
 # github-actions-experiments
 GitHub Actions Experiments
 
-![https://github.com/boisgera/github-actions-experiments/workflows/main/badge.svg]
+![main](https://github.com/boisgera/github-actions-experiments/workflows/main/badge.svg)
 
 ### conda environments
 
