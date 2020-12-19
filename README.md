@@ -1,6 +1,21 @@
 # github-actions-experiments
 GitHub Actions Experiments
 
+### conda environments
+
+First, before the job steps:
+
+    defaults:
+      run:
+        shell: bash -l {0}    
+
+then
+
+    - uses: conda-incubator/setup-miniconda@v2
+      with:
+        activate-environment: CDIS
+        environment-file: environment.yml
+
 ### gh-pages
 
  1. Create the gh-pages branch, push it to github
