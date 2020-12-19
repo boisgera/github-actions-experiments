@@ -12,6 +12,7 @@ jobs:
       - run: echo "******** MAIN ACTION ********"
       - run: cat README.md
 
+      - run: sudo apt-get update
       - run: sudo apt-get install texlive-full
 
       - uses: conda-incubator/setup-miniconda@v2
