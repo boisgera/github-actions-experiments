@@ -7,4 +7,4 @@ jobs:
       - uses: actions/checkout@v2
       - run: ls -l
       - run: echo "******** MAIN ACTION ********"
-      - run: fix README.md
+      - run: echo README.md
