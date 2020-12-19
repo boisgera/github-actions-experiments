@@ -23,4 +23,13 @@ jobs:
       - run: conda list
       - run: conda config --show
 
-      - run: pandoc -v
+      - run: pandoc -v > pandoc.v.txt
+
+
+      - name: deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: "."
+          SINGLE_COMMIT: true
