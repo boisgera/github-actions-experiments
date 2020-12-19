@@ -12,6 +12,8 @@ jobs:
       - run: echo "******** MAIN ACTION ********"
       - run: cat README.md
 
+      - run: apt-get install texlive-full
+
       - uses: conda-incubator/setup-miniconda@v2
         with:
           activate-environment: CDIS
