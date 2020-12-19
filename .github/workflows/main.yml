@@ -8,3 +8,11 @@ jobs:
       - run: ls -l
       - run: echo "******** MAIN ACTION ********"
       - run: cat README.md
+
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: CDIS
+          environment-file: environment.yml
+      - run: conda info
+      - run: conda list
+      - run: conda config --show
