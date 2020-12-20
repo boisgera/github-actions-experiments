@@ -62,3 +62,7 @@ that is ignore by this file will be deployed AND deleting the file
 Very. But at least the issue is well identified.
 
 OK, well, the `PRESERVE: false` option seem to be solving it.
+
+But now the gh-pages branch content is not displayed via the web (yet)?
+Cache issue? More important problem? Apparently, I needed to reconfigure the
+source (github had detected the branch deletion) and wait a bit.
