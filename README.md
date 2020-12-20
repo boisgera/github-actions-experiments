@@ -49,3 +49,8 @@ but only with non-orphaned gh-pages branch, like that:
             BRANCH: gh-pages
             FOLDER: "."
             SINGLE_COMMIT: true
+
+Now, if I kill this branch and update this deletion remotely : 
+
+    $ git branch -d gh-pages
+    $ git push origin --delete gh-pages
