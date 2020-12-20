@@ -54,3 +54,11 @@ Now, if I kill this branch and update this deletion remotely :
 
     $ git branch -d gh-pages
     $ git push origin --delete gh-pages
+
+Oh wow, the github actions RECREATES the gh-pages branch. Isn't that nice?
+OK, so that's not the issue. The issue is with the `.gitignore` file ; nothing
+that is ignore by this file will be deployed AND deleting the file 
+(or overlay something) before the deployment won't work. How annoying is that? 
+Very. But at least the issue is well identified.
+
+OK, well, the `PRESERVE: false` option seem to be solving it.
