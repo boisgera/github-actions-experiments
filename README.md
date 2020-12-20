@@ -66,3 +66,5 @@ OK, well, the `PRESERVE: false` option seem to be solving it.
 But now the gh-pages branch content is not displayed via the web (yet)?
 Cache issue? More important problem? Apparently, I needed to reconfigure the
 source (github had detected the branch deletion) and wait a bit.
+
+Even `.gitignore` deletion and `PRESERVE: false` doesn't work. I don't get it.
