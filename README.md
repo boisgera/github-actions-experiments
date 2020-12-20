@@ -22,16 +22,23 @@ then
 
 ### gh-pages
 
- 1. Create the gh-pages branch, push it to github
+There are at least two widely used actions for gh-pages deployments:
 
-        $ git checkout -b gh-pages # not an orphaned branch
-        # we don't care, we do not intend to keep its history anyway.
+  - <https://github.com/marketplace/actions/deploy-to-github-pages> (1.2k)
+
+  - <https://github.com/peaceiris/actions-gh-pages> (1.5k)
+
+So far I have been able to only make the first work (the second one not at all), 
+but only with non-orphaned gh-pages branch, like that:
+
+ 1. Create the (non-orphaned) gh-pages branch, push it to github
+
+        $ git checkout -b gh-pages 
         $ git push --set-upstream origin gh-pages
 
  2. In the settings, panel, select the gh-pages as the Github pages source 
     (now it's quite extensively configurable, I am not sure it's the best
     option anymore : the branch & directory can be selected).
-
 
  3. Configure github-pages actions stuff:
 
