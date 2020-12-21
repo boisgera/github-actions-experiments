@@ -26,7 +26,7 @@ jobs:
 #      - run: echo "dummy change (check no history in gh-pages)"
 #      - run: pandoc -v > pandoc.v.txt
 
-      - run: echo "stuff" > stuff.txt
+      - run: echo "stuff" > stuff.txt 
       - run: echo "stuff" > stuff.md
       - run: echo "stuff" > stuff.pdf
       - run: echo "stuff" > stuff.o
