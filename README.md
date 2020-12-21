@@ -68,3 +68,4 @@ Cache issue? More important problem? Apparently, I needed to reconfigure the
 source (github had detected the branch deletion) and wait a bit.
 
 Even `.gitignore` deletion and `PRESERVE: false` doesn't work. I don't get it.
+Buuuuuut, `.gitignore` deletion and `PRESERVE: true` works. Go figure!
